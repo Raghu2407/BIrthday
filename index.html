@@ -783,7 +783,7 @@ article {
   </head>
 
 
-  <body>
+  <body class="orange accent-3">
     <div id="some_div">
     </div>
     <div id="birthday">
@@ -1250,14 +1250,33 @@ function doSomething() {
 $('#surprise').delay(5000).fadeIn(500) ;
 $("#birthday").show();
 $("#some_div").hide();
-for (var i=0; i < 40; i++) {
+for (var i=0; i < 20; i++) {
+  $('.balloons').append("<div class='balloon balloon" + i + "'></div>");
+  setTimeout(function() { $(".balloons").show();  }, 5000);
+  setTimeout(function() { 
+  $(".balloons").hide();
+
+}, 5000);
+if(i == 15){
+    break;
+  }
+  nextSet();
+ //setTimeout(function() { $(".oct4").hide("slow"); }, 10000);
+}
+
+
+
+}
+
+function nextSet() {
+  setTimeout(function() {
+  for (var i=0; i < 2; i++) {
   $('.balloons').append("<div class='balloon balloon" + i + "'></div>");
   setTimeout(function() { $(".balloons").show();  }, 5000);
  //setTimeout(function() { $(".balloons").hide("slow"); }, 10000);
  //setTimeout(function() { $(".oct4").hide("slow"); }, 10000);
-
-
 }
+},1000)
 }
 </script>
 
