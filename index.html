@@ -27,7 +27,15 @@
   background-image: url(images/11.jpg);
 }
 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
 
+  main {
+    flex: 1 0 auto;
+  }
 
 .hidden{
 	opacity: 0;
@@ -78,7 +86,7 @@ svg {
 .balloons {
   height: 100%;
   width: 100%;
-  position: absolute;
+  position: fixed;
 }
 
 .balloon {
@@ -785,6 +793,7 @@ article {
   </head>
 
 
+<main>
   <body class="orange accent-3">
     <div id="some_div">
     </div>
@@ -1168,7 +1177,7 @@ article {
   </div> -->
   <!-- <input type="button" name="clickMe" value="Click me and wait!"
   onclick="setTimeout('alert(\'Surprise!\')', 5000)"/> -->
-
+</div>
 <style>
 #collage {
   -webkit-animation-duration: 3s;
@@ -1191,6 +1200,8 @@ article {
   -webkit-animation-iteration-count: 1;
 }
 </style>
+
+
 
 <script
   src="https://code.jquery.com/jquery-3.6.4.js"
@@ -1236,7 +1247,7 @@ function countdown() {
     // };
     //  y.show();
   } else {
-      elem.innerHTML = '<h1>Wait for '+ timeLeft + ' seconds'+'</h1>';
+      elem.innerHTML = '<h1 class="white-text">Wait for '+ timeLeft + ' seconds'+'</h1>';
       timeLeft--;
   }
 }
@@ -1284,5 +1295,14 @@ function nextSet() {
 
     <!--JavaScript at end of body for optimized loading-->
     <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+
   </body>
+</main>
+  <footer class="page-footer transparent center">
+    <div class="footer-copyright">
+      <div class="container">
+      Made with <span class="red-text">&#10084;</span> by Raghottam
+      </div>
+    </div>
+  </footer>
 </html>
