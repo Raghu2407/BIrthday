@@ -1217,12 +1217,10 @@ var x = document.getElementById("myAudio").addEventListener("click", playAudio);
  var y = document.getElementById("show");
  var alerts = document.getElementById('myAudio');
 function playAudio() {
-      
-        alerts.muted = false;
-      alerts.play();
-      
+alerts.muted = false;
+alerts.play();  
 }
-var timeLeft = 1;
+var timeLeft = 10;
 var elem = document.getElementById('some_div');
 var timerId = setInterval(countdown, 1000);
 
@@ -1246,7 +1244,7 @@ function doSomething() {
   $('#birthdayname').text(url.searchParams.get('Name'));
 //var show = document.getElementById("div");
 //var y = document.getElementById("show");
-playAudio();
+  playAudio();
 //function playAudio() {
  
 $('#surprise').delay(5000).fadeIn(500) ;
