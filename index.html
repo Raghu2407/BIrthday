@@ -758,6 +758,17 @@ h1 {
     vertical-align: middle;
     top: 200px;
     font-family: 'Wendy One', sans-serif;
+    font-size: 30px;
+
+}
+
+h5 {
+    position: relative;
+    font-family: oct;
+    text-align: center;
+    vertical-align: middle;
+    top: 200px;
+    font-family: 'Wendy One', sans-serif;
 
 }
 
@@ -777,6 +788,7 @@ article {
     </div>
     <div id="birthday">
       <h1 class="oct4">Happy Birthday <span id="birthdayname"></span></h1>
+      <h5 class="oct4">Have a Wonderful Year Ahead &#x1F600;</h5>
       <div id="surprise">
       <!-- <div class="row">
         <div class="col s12">
@@ -1234,12 +1246,7 @@ function doSomething() {
   $('#birthdayname').text(url.searchParams.get('Name'));
 //var show = document.getElementById("div");
 //var y = document.getElementById("show");
- $('body').click(function(){
-  setTimeout(() => {
-    $('body').click( playAudio());
-  }, 1000);
- });
- $('body').trigger('playAudio()');
+playAudio();
 //function playAudio() {
  
 $('#surprise').delay(5000).fadeIn(500) ;
@@ -1248,8 +1255,8 @@ $("#some_div").hide();
 for (var i=0; i < 40; i++) {
   $('.balloons').append("<div class='balloon balloon" + i + "'></div>");
   setTimeout(function() { $(".balloons").show();  }, 5000);
- setTimeout(function() { $(".balloons").hide("slow"); }, 10000);
- setTimeout(function() { $(".oct4").hide("slow"); }, 10000);
+ //setTimeout(function() { $(".balloons").hide("slow"); }, 10000);
+ //setTimeout(function() { $(".oct4").hide("slow"); }, 10000);
 
 
 }
